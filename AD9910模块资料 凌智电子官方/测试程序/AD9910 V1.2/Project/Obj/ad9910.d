@@ -1,0 +1,12 @@
+.\obj\ad9910.o: ..\User\AD9910.c
+.\obj\ad9910.o: ..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h
+.\obj\ad9910.o: ..\CMSIS\CoreSupport\core_cm3.h
+.\obj\ad9910.o: D:\KeilSTM32\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\ad9910.o: ..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h
+.\obj\ad9910.o: ..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h
+.\obj\ad9910.o: ..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\obj\ad9910.o: ..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h
+.\obj\ad9910.o: ..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\obj\ad9910.o: ..\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\obj\ad9910.o: ..\User\AD9910.h
+.\obj\ad9910.o: ..\User\Delay.h

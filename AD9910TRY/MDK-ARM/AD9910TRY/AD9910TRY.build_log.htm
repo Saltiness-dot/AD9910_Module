@@ -1,0 +1,78 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 ASUS, 1, LIC=SDA0P-MKUSX-56BQ2-9Q25B-25WIQ-SBT0V
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  E:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+C:\Users\ASUS\Desktop\AD9910 TRY\AD9910TRY\MDK-ARM\AD9910TRY.uvprojx
+Project File Date:  04/15/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'E:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'AD9910TRY'
+compiling main.c...
+../Core/Src/main.c(92): warning:  #223-D: function "AD9910_Init" declared implicitly
+     AD9910_Init();																			// AD9910时钟的设置和辅助DAC设置 以及AD9910复位
+../Core/Src/main.c(93): warning:  #223-D: function "AD9910_Singal_Profile_Init" declared implicitly
+      AD9910_Singal_Profile_Init();																	// 单频PROFILE初始化
+../Core/Src/main.c(94): warning:  #223-D: function "AD9910_Singal_Profile_Set" declared implicitly
+      AD9910_Singal_Profile_Set(0, 450000000, 0x3FFF, 0);									// 设置正弦波信息 （ 通道（0~7） ， 频率 ，幅度 ， 相位 ）
+../Core/Src/main.c(96): warning:  #223-D: function "AD9910_RAM_Init" declared implicitly
+      AD9910_RAM_Init();		// RAM功能初始化
+../Core/Src/main.c(97): warning:  #223-D: function "AD9910_RAM_ZB_Fre_Init" declared implicitly
+      AD9910_RAM_ZB_Fre_Init();                                       // 载波频率初始化
+../Core/Src/main.c(98): warning:  #223-D: function "AD9910_RAM_ZB_Fre_Set" declared implicitly
+      AD9910_RAM_ZB_Fre_Set(0);                                       // 设置载波频率
+../Core/Src/main.c(99): warning:  #223-D: function "AD9910_WAVE_RAM_AMP_W" declared implicitly
+      AD9910_WAVE_RAM_AMP_W(2);                                       // 写幅度的RAM							
+../Core/Src/main.c(100): warning:  #223-D: function "AD9910_RAM_CON_RECIR_AMP_R" declared implicitly
+      AD9910_RAM_CON_RECIR_AMP_R(10000);   //感谢2021级吕公
+../Core/Src/main.c: 8 warnings, 0 errors
+linking...
+Program Size: Code=5894 RO-data=442 RW-data=22592 ZI-data=1632  
+FromELF: creating hex file...
+"AD9910TRY\AD9910TRY.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil.STM32F4xx_DFP.2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_AD9910TRY
+  E:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  E:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
